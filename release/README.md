@@ -1,12 +1,6 @@
-# postcode
+# Reperto Postcode Data
 
-Norwegian postcodes in a web-friendly format
-
-## Overview
-
-This repository contains scripts used to get Norwegian postcode data from open sources and combine and transform them into a web-friendly format (GeoJSON).
-
-The data is then made available as Github releases.
+The data in this package is compiled and converted by [reperto](https://reperto.no), but is a combination of other sources.
 
 ## Data sources and data licenses
 
@@ -20,30 +14,3 @@ This means the name of the Norwegian Mapping Authority must appear in all contex
 ### Posten Norge
 
 The metadata attribute `category_code` is from [© Posten Norge AS](https://www.bring.no/tjenester/adressetjenester/postnummer). The data is not released under a specific licence, but attribution should be given to _© Posten Norge AS_.
-
-## Requirements
-
-The scripts are made in bash and python3.
-
-### Bash
-
-Bash scripts require the following packages/tools installed.
-
-* jq
-* iconv
-* curl
-* wget
-* unzip
-
-Python scripts also need the following packages to be installed
-
-* proj
-
-### Python3
-
-See [requirements.txt](requirements.txt). Install requirements (in a virtualenv) using `pip install requrements.txt`.
-
-## Source code licence
-
-The source code used to get, extract, massage and publish that content is licensed under the [MIT license](LICENCE.md).
-For license information about the data, see sections above.
