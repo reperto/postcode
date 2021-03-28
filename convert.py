@@ -123,16 +123,16 @@ for code in postalcodes:
         },
         "attribution" : [
             {
-                "publisher" : "Kartverket ©",
+                "of" : "Entire dataset, except field metadata.postcode_category",
+                "to" : "Kartverket ©",
                 "source" : "https://kartkatalog.geonorge.no/metadata/462a5297-33ef-438a-82a5-07fff5799be3",
-                "license" : "https://creativecommons.org/licenses/by/4.0/",
-                "data" : "Entire dataset, except metadata.postcode_category"
+                "license" : "https://creativecommons.org/licenses/by/4.0/"
             },
             {
-                "publisher" : "Posten Norge AS",
+                "of" : "The field metadata.postcode_category",
+                "to" : "Posten Norge AS",
                 "source" : "https://www.bring.no/tjenester/adressetjenester/postnummer",
-                "license" : "Unknown",
-                "data" : "metadata.postcode_category"
+                "license" : "Unknown"
             }
         ],
         "features" : [{
