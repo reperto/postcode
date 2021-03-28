@@ -21,6 +21,26 @@ This means the name of the Norwegian Mapping Authority must appear in all contex
 
 The metadata attribute `category_code` is from [© Posten Norge AS](https://www.bring.no/tjenester/adressetjenester/postnummer). The data is not released under a specific licence, but attribution should be given to _© Posten Norge AS_.
 
+## Getting the data
+
+This repository only contains the scripts to download, massage, release and publish data. The data itself is released as zip archive assets to [GitHub Releases](https://github.com/reperto/postcode/releases).
+
+The data can also be accessed, free of charge, from https://data.reperto.no. To do that, use the following url pattern:
+
+`https://data.reperto.no/file/reperto-open-data/postcode/[release_version]/[postcode].json`
+
+Example: https://data.reperto.no/file/reperto-open-data/postcode/v0.1.1/0010.json
+
+data.reperto.no is hosted on Backblaze B2 with Cloudflare CDN for caching in front.
+
+## Release versioning
+
+The data is released with [semver](https://semver.org/)-like tags/releases. I'm trying to use the following definition for _major_, _minor_ and _patch_
+
+* **major** - breaking changes to the json structure
+* **minor** - non-breaking changes to the json structure, like adding new properties
+* **patch** - changes to the data itself, e.g. due to updates in source
+
 ## Requirements
 
 The scripts are made in bash and python3.
@@ -33,7 +53,9 @@ Bash scripts require the following packages/tools installed.
 * iconv
 * curl
 * wget
+* zip
 * unzip
+* rclone
 
 Python scripts also need the following packages to be installed
 
